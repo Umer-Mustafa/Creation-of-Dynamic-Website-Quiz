@@ -1,0 +1,109 @@
+/* Beginning of Index */
+
+/* CSS added to the the heading of the index page */
+#menuTitle{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 75px;
+    font-style: normal;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* CSS to put the menu bar at the center and change its colour and size */
+#menu{
+    background-color: #EA1B21;
+    width: 250px;
+    height: 50px;
+    color: #FFFFFF;
+	font-size: 25px;
+}
+
+#option {
+    text-align: center;
+}
+
+
+/* Beginning of Easy */
+
+/* CSS added to the the heading of the index page */
+#easyTitle{
+	width:100%;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+/* CSS to change the colour of the h3 tag */
+h3{
+	color: #FFFF00;
+}
+
+/* CSS to change the font colour */
+div #question {
+    color: black;
+}
+
+/* CSS to change the colour of the p tag */
+p {
+    color: #FFFFFF;
+}
+
+/* CSS to change the colour of the text when you hover over it */
+p:hover {
+    color: #FF0004;	
+}
+
+/* CSS to change the width of each question/answer to fit its length */
+#quiz {
+    padding-left: 50px;   
+}
+
+/* CSS to create the left and right column */
+#left, #right {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    background-color: rgba(199,190,179,.5);
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 25px;
+}
+
+/* CSS for the left column */
+#left {
+    width: 25%;
+	margin-left: 10%;
+	margin-right:15%;
+}
+
+/* CSS for the right column */
+#right {
+    width: 35%;
+	margin-right:10%;
+}
+
+/* CSS to increase the width of the p tag */
+p{
+	width: 100%;
+}
+
+/* CSS added to the score id */
+#score {
+    color: #FFFFFF;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    float: right;
+    width: 12%;
+	height: 35px;
+    margin-right: 44.5%;
+    background-color: ;
+    font-size: 25px;
+    text-align: center;
+}

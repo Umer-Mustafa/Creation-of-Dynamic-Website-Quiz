@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>MCU Quiz</title>
+	<link rel="stylesheet" href="css/Easy.css"></link> <!-- Code to connect the external CSS  file -->
+	<script src="js/Easy.js"></script> <!-- Code to connect the JavaScript file -->
+</head>
+<style>
+	body{
+		background-image:url('Images/Marvel.jpg'); <!-- Internal CSS to add an image to the background -->
+		background-size:cover; <!-- Internal CSS to make the image cover the screen -->
+		background-repeat:no-repeat; <!-- Internal CSS to make the image not repeat -->
+	}
+</style>
+<body>
+
+<form>
+	<h1 id="menuTitle">Choose a difficulty</h1> <!-- Heading of the page -->
+	<div id="option">
+		<input id="menu" type="button" value="Easy" onclick="Easy()"> <!-- Creates a button to open the Easy.html page -->
+		<input id="menu" type="button" value="Medium" onclick="Medium()"> <!-- Creates a button to open the Medium.html page -->
+		<input id="menu" type="button" value="Hard" onclick="Hard()"> <!-- Creates a button to open the Hard.html page -->
+	</div>
+  
+</form>
+</body>
+</html>

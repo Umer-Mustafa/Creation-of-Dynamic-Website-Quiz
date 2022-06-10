@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>MCU Quiz</title>
+	<link rel="stylesheet" href="css/Easy.css"></link> <!-- Code to connect the external CSS  file -->
+	<script src="js/Easy.js"></script> <!-- Code to connect the JavaScript file -->
+</head>
+<style>
+	body{
+		background-image:url('Images/EasyBG.jpg'); <!-- Internal CSS to add an image to the background -->
+		background-size:cover; <!-- Internal CSS to make the image cover the screen -->
+	}
+</style>
+<body>
+	<h1 id="easyTitle">Welcome to the MCU Quiz:</h1> <!-- Heading of the page -->
+<form id="quiz">
+	<div id="left"> <!-- Div to create the left column -->
+		<p id="question">1. What does MCU stand for?</p> <!--  -->
+		<p id="qs1"><input type="radio" name="question1" value="Marvel Cinematic Universe">A. Marvel Cinematic Universe</p>
+		<p id="qs1"><input type="radio" name="question1" value="Marvel Comic Universe">B. Marvel Comic Universe</p>					<!-- Shows the list of options -->
+		<p id="qs1"><input type="radio" name="question1" value="Marvel Comic University">C. Marvel Comic University</p>
+		<p id="qs1"><input type="radio" name="question1" value="Marvel Cinema Universe">D. Marvel Cinema Universe</p> 
+		<h3 id="q1"></h3> <!-- At the end shows if the answer is correct or incorrect using JS -->
+	</div>
+	<div id="right"> <!-- Div to create the right column -->
+		<p id="question">2. How many movies are there currently?</p>
+		<p id="qs2"><input type="radio" name="question2" value="25">A. 25</p>
+		<p id="qs2"><input type="radio" name="question2" value="27">B. 27</p> 														<!-- Shows the list of options -->
+		<p id="qs2"><input type="radio" name="question2" value="29">C. 29</p>
+		<p id="qs2"><input type="radio" name="question2" value="30">D. 30</p>
+		<h3 id="q2"></h3> <!-- At the end shows if the answer is correct or incorrect using JS -->
+	</div>
+
+	<div id="left"> <!-- Div to create the left column -->
+		<p id="question">3. In what year did the first movie come out?</p>
+		<p id="qs3"><input type="radio" name="question3" value="2005">A. 2005</p>
+		<p id="qs3"><input type="radio" name="question3" value="2006">B. 2006</p> 													<!-- Shows the list of options -->
+		<p id="qs3"><input type="radio" name="question3" value="2008">C. 2008</p>
+		<p id="qs3"><input type="radio" name="question3" value="2009">D. 2009</p>
+		<h3 id="q3"></h3> <!-- At the end shows if the answer is correct or incorrect using JS -->
+	</div>
+
+	<div id="right"> <!-- Div to create the right column -->
+		<p id="question">4. Who were the 6 original Avengers? </p>
+		<p id="qs4"><input type="radio" name="question4" value="Iron Man, Captain America, Hulk, Thor, Hawkeye and Black Widow">A. Iron Man, Captain America, Hulk, Thor, Hawkeye and Black Widow</p>
+		<p id="qs4"><input type="radio" name="question4" value="Iron Man, Captain America, Spider-man, Thor, Ant-man and Hawkeye">B. Iron Man, Captain America, Spider-man, Thor, Ant-man and Hawkeye</p>	<!-- Shows the list of options -->
+		<p id="qs4"><input type="radio" name="question4" value="Captain Marvel, Nick Fury, Thor, Hulk, Loki and Iron Man">C. Captain Marvel, Nick Fury, Thor, Hulk, Loki and Iron Man</p>
+		<p id="qs4"><input type="radio" name="question4" value="Captain Marvel, Nick Fury, Hawkeye, Captain America, Black Widow and Spider-Man">D. Captain Marvel, Nick Fury, Hawkeye, Captain America, Black Widow and Spider-Man</p>
+		<h3 id="q4"></h3> <!-- At the end shows if the answer is correct or incorrect using JS -->
+	</div>
+
+	<div id="left"> <!-- Div to create the left column -->
+		<p id="question">5. Who was the villain in Avengers Endgame?</p>
+		<p id="qs5"><input type="radio" name="question5" value="Dormammu">A. Dormammu</p>
+		<p id="qs5"><input type="radio" name="question5" value="Ultron">B. Ultron</p> 											<!-- Shows the list of options -->
+		<p id="qs5"><input type="radio" name="question5" value="Loki">C. Loki</p>
+		<p id="qs5"><input type="radio" name="question5" value="Thanos">D. Thanos</p>
+		<h3 id="q5"></h3> <!-- At the end shows if the answer is correct or incorrect using JS -->
+	</div>
+	
+	<div id="right"> <!-- Div to create the right column -->
+		<p id="question">6. What is the name of Thors Hammer?</p>
+		<p id="qs6"><input type="radio" name="question6" value="Stormbreaker">A. Stormbreaker</p>
+		<p id="qs6"><input type="radio" name="question6" value="Mjolnir">B. Mjolnir</p>											<!-- Shows the list of options -->
+		<p id="qs6"><input type="radio" name="question6" value="Mew Mew">C. Mew Mew</p>
+		<p id="qs6"><input type="radio" name="question6" value="Jonathon">D. Jonathon</p>
+		<h3 id="q6"></h3> <!-- At the end shows if the answer is correct or incorrect using JS -->
+	</div>
+	
+	<p id="score"></p> <!-- Shows the score at the end using JS -->
+	
+	<input id="submit" type="button" value="Submit answers" onclick="Check()"> <!-- Creates a button to submit the answers -->
+	<input id="submit" type="button" value="Main Menu" onclick="Index()"> <!-- Creates a button to go to the main page -->
+	
+	
+</form>
+</body

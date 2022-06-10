@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>MCU Quiz</title>
+	<script src="js/Medium.js"></script> <!-- Code to connect the external JavaScript file -->
+	<link rel="stylesheet" href="css/Medium.css"></link> <!-- Code to connect the CSS file -->
+</head>
+<style>
+body{
+		background-image:url('Images/MediumBG.jpg'); <!-- Internal CSS to add an image to the background -->
+		background-size:cover; <!-- Internal CSS to make the image cover the screen -->
+	}
+</style>
+<body>
+<form id="quiz">
+	<h1>What movie is this from?</h1> <!-- Heading of the page -->
+	<div class="container"> <!-- Creates a div with the id container -->
+		<img src="Images/Med1.jpg"></img> <!-- Adds an image on the page -->
+		<p ><input type="radio" name="question1" value="Captain Marvel">Captain Marvel</p>
+		<p ><input type="radio" name="question1" value="Spider-Man: Far From Home">Spider-Man: Far From Home</p><!-- Shows the list of options -->
+		<p ><input type="radio" name="question1" value="The Avengers">The Avengers</p>
+		<p ><input type="radio" name="question1" value="Black Panther">Black Panther</p>
+		<input type="button" value="Next" class="next" onclick="next(1)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<img src="Images/Med2.jpg"></img> <!-- Adds an image on the page -->
+		<p ><input type="radio" name="question2" value="The Avengers">The Avengers</p>
+		<p ><input type="radio" name="question2" value="Avengers: Age of Ultron">Avengers: Age of Ultron</p>	<!-- Shows the list of options -->
+		<p ><input type="radio" name="question2" value="Thor">Thor</p>
+		<p ><input type="radio" name="question2" value="Hulk">Hulk</p>
+		<input type="button" value="Next" class="next" onclick="next(2)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<img src="Images/Med3.jpg"></img> <!-- Adds an image on the page -->
+		<p ><input type="radio" name="question3" value="Iron Man">Iron Man</p>
+		<p ><input type="radio" name="question3" value="Ant Man">Ant Man</p>									<!-- Shows the list of options -->
+		<p ><input type="radio" name="question3" value="Black Panther">Black Panther</p>
+		<p ><input type="radio" name="question3" value="Doctor Strange">Doctor Strange</p>
+		<input type="button" value="Next" class="next" onclick="next(3)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<img src="Images/Med4.jpg"></img> <!-- Adds an image on the page -->
+		<p ><input type="radio" name="question4" value="Black Widow">Black Widow</p>
+		<p ><input type="radio" name="question4" value="Iron Man 2">Iron Man 2</p>								<!-- Shows the list of options -->
+		<p ><input type="radio" name="question4" value="Eternals">Eternals</p>
+		<p ><input type="radio" name="question4" value="Thor: The Dark World">Thor: The Dark World</p>
+		<input type="button" value="Next" class="next" onclick="next(4)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<img src="Images/Med5.jpg"></img> <!-- Adds an image on the page -->
+		<p ><input type="radio" name="question5" value="Thor: Ragnarok">Thor: Ragnarok</p>
+		<p ><input type="radio" name="question5" value="Thor: The Dark World">Thor: The Dark World</p> 			<!-- Shows the list of options -->
+		<p ><input type="radio" name="question5" value="Thor">Thor</p>
+		<p ><input type="radio" name="question5" value="Hulk">Hulk</p>
+		<input type="button" value="Submit" onclick="check()"></input> <!-- Creates a button which submits the answers -->
+		<input id="submit" type="button" value="Main Menu" onclick="Index()"> <!-- Creates a button to go back to the main apge -->
+	</div>
+	
+	<h2 id="score"></h2> <!-- Shows the score at the end using JS -->
+	
+</form>
+	<script> /* https://www.youtube.com/watch?v=j9Elj5Sxfug */
+        /* Displays the first div with the id container */
+        document.getElementsByClassName('container')[0].style.display = "block";
+    </script>
+</body>
+</html>

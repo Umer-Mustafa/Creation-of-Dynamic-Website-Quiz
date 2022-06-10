@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>MCU Quiz</title>
+	<script src="js/Hard.js"></script> <!-- Code to connect the external CSS  file -->
+	<link rel="stylesheet" href="css/Hard.css"></link> <!-- Code to connect the JavaScript file -->
+</head>
+<style>
+body{
+		background-image:url('Images/HardBG.jpg'); <!-- Internal CSS to add an image to the background -->
+		background-size:cover; <!-- Internal CSS to make the image cover the screen -->
+	}
+</style>
+<body>
+<form id="quiz">
+	<h1>Who said this quote?</h1> <!-- Heading of the page -->
+	<div class="container"> <!-- Creates a div with the id container -->
+		<h3>"Thats my secret, Captain. I'm always angry"</h3> <!--  -->
+		<p ><input type="radio" name="question1" value="Thor">Thor</p>
+		<p ><input type="radio" name="question1" value="Loki">Loki</p>							<!-- Shows the list of options -->
+		<p ><input type="radio" name="question1" value="Hulk">Hulk</p>
+		<p ><input type="radio" name="question1" value="Black Panther">Black Panther</p>
+		<input type="button" value="Next" class="next" onclick="next(1)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<h3>"I recognize the council has made a decision, but given that it's a stupid-ass decision, I've elected to ignore it."</h3>
+		<p ><input type="radio" name="question2" value="Nick Fury">Nick Fury</p>
+		<p ><input type="radio" name="question2" value="Tony Stark">Tony Stark</p>				<!-- Shows the list of options -->
+		<p ><input type="radio" name="question2" value="Bruce Banner">Bruce Banner</p>
+		<p ><input type="radio" name="question2" value="Steve Rogers">Steve Rogers</p>
+		<input type="button" value="Next" class="next" onclick="next(2)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<h3>"We know each other! He's a friend from work!"</h3>
+		<p ><input type="radio" name="question3" value="Hulk">Hulk</p>
+		<p ><input type="radio" name="question3" value="Loki">Loki</p>							<!-- Shows the list of options -->
+		<p ><input type="radio" name="question3" value="Ant Man">Ant Man</p>
+		<p ><input type="radio" name="question3" value="Thor">Thor</p>
+		<input type="button" value="Next" class="next" onclick="next(3)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<h3>"I can do this all day"</h3>
+		<p ><input type="radio" name="question4" value="Captain America">Captain America</p>
+		<p ><input type="radio" name="question4" value="Iron Man">Iron Man</p>					<!-- Shows the list of options -->
+		<p ><input type="radio" name="question4" value="Spider-Man">Spider-Man</p>
+		<p ><input type="radio" name="question4" value="Thor">Thor</p>
+		<input type="button" value="Next" class="next" onclick="next(4)"></input> <!--Creates a button which runs the JS to hide this container and show the next one-->
+	</div>
+	
+	<div class="container"> <!-- Creates a div with the id container -->
+		<h3>"I am inevitable"</h3>
+		<p ><input type="radio" name="question5" value="Doctor Strange">Doctor Strange</p>
+		<p ><input type="radio" name="question5" value="Iron Man">Iron Man</p>					<!-- Shows the list of options -->
+		<p ><input type="radio" name="question5" value="Thanos">Thanos</p>
+		<p ><input type="radio" name="question5" value="Hulk">Hulk</p>
+		<input type="button" value="Submit" onclick="check()"></input> <!-- Creates a button which submits the answers -->
+		<input id="submit" type="button" value="Main Menu" onclick="Index()"> <!-- Creates a button to go back to the main apge -->
+	</div>
+	
+	<h2 id="score"></h2> <!-- Shows the score at the end using JS -->
+	
+</form>
+	<script> /* https://www.youtube.com/watch?v=j9Elj5Sxfug */
+        /* Displays the first div with the id container */
+        document.getElementsByClassName('container')[0].style.display = "block";
+    </script>
+</body>
+</html>
